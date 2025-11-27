@@ -49,7 +49,7 @@ st.subheader("Batch Prediction")
 file = st.file_uploader("Upload CSV file", type=["csv"])
 if file is not None:
     if st.button("Predict for Batch", type='primary'):
-        response = requests.post("https://pulususivatejareddy123-api-ui.hf.space/v1/customerbatch", files={"file": file})    # enter user name and space name before running the cell
+        response = requests.post("https://pulususivatejareddy123-api-uii.hf.space/v1/customerbatch", files={"file": file})    # enter user name and space name before running the cell
         if response.status_code == 200:
             result = response.json()
             st.header("Batch Prediction Results")
